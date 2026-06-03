@@ -3,33 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>TodoList</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-body-tertiary">
-    <main class="container py-5">
-        <section class="app card shadow-sm mx-auto">
-            <div class="card-body p-4">
-                <h1 class="h3 text-center mb-4">To Do List</h1>
+<body>
+    <h1>Simple Todo List</h1>
+<p>Welcome to this todo list. Double click to edit the todo</p>
+     <input type="text" id="todo-input" placeholder="Enter a todo and press Add or Enter">
 
-                <div class="todo-form input-group mb-3">
-                    <input
-                        id="todo-input"
-                        class="form-control"
-                        type="text"
-                        placeholder="Add a new task"
-                        autocomplete="off"
-                    >
-                    <button id="add-btn" class="btn btn-primary" type="button">Add</button>
-                </div>
-
-                <ul id="todo-list" class="list-group"></ul>
-            </div>
-        </section>
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+     <button id="add-btn">Add</button>
+     <ul id="todo-list"></ul>
+     <script src="script.js"></script>
 </body>
 </html>
